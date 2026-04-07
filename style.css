@@ -1,0 +1,86 @@
+/* 🌟 Web-Safe Premium Fonts 🌟 */
+.font-maname { font-family: 'Maname', serif; }
+.font-yaldevi { font-family: 'Yaldevi', sans-serif; }
+.font-abhaya { font-family: 'Abhaya Libre', serif; }
+.font-poppins { font-family: 'Poppins', sans-serif; }
+
+body { background: linear-gradient(135deg, #f8fafc, #f3e8ff, #fefce8, #e0e7ff); background-size: 400% 400%; animation: gradientBG 20s ease infinite; overflow-x: hidden; }
+@keyframes gradientBG { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+/* Floating Orbs & Background SVG */
+.floating-orb { position: fixed; border-radius: 50%; filter: blur(90px); z-index: 0; pointer-events: none; opacity: 0.6; animation: floatOrb 20s infinite alternate ease-in-out; }
+.orb-1 { width: 450px; height: 450px; background: #dbeafe; top: -100px; left: -100px; animation-delay: 0s; }
+.orb-2 { width: 350px; height: 350px; background: #fdf4ff; bottom: 5%; right: -50px; animation-delay: -5s; }
+.orb-3 { width: 300px; height: 300px; background: #fef3c7; top: 40%; left: 30%; animation-delay: -10s; }
+@keyframes floatOrb { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(50px, 50px) scale(1.1); } }
+
+.awurudu-bg { position: fixed; top: 50%; left: 50%; width: 150vw; height: 150vw; min-width: 1200px; min-height: 1200px; transform: translate(-50%, -50%); background-image: url("data:image/svg+xml,%3Csvg width='1000' height='1000' viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23fbbf24' stroke-width='1.5' fill='none' opacity='0.25'%3E%3Ccircle cx='500' cy='500' r='300'/%3E%3Ccircle cx='500' cy='500' r='250' stroke-dasharray='10,20' stroke-width='3' stroke='%23f87171'/%3E%3Cpath d='M500 100 L500 200 M500 800 L500 900 M100 500 L200 500 M800 500 L900 500 M217 217 L288 288 M712 712 L783 783 M217 783 L288 712 M712 288 L783 217' stroke-width='4' stroke-linecap='round' stroke='%23fbbf24'/%3E%3C/g%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; z-index: 0; pointer-events: none; animation: spinAwurudu 180s linear infinite; }
+@keyframes spinAwurudu { 100% { transform: translate(-50%, -50%) rotate(360deg); } }
+
+.glossy-panel { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05); }
+
+/* 🌟 NEW: Active Nakatha Ring Effect 🌟 */
+.active-nakath {
+    animation: pulseBorder 2s infinite;
+    border-width: 2px !important;
+}
+@keyframes pulseBorder {
+    0% { border-color: rgba(239, 68, 68, 0.5); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+    70% { border-color: rgba(239, 68, 68, 1); box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
+    100% { border-color: rgba(239, 68, 68, 0.5); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+/* 🌟 NEW: Accordion (Recipes) Transition 🌟 */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+/* Share & Time Boxes */
+.share-btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; border-radius: 999px; border-width: 1px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(5px); transition: all 0.2s; cursor: pointer; }
+.share-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.time-box { background: #fff; border: 1px solid rgba(255,255,255,0.5); border-radius: 18px; padding: 20px 5px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.04); }
+.time-val { font-size: 2.5rem; font-weight: 700; color: #1e293b; line-height: 1; }
+.time-label { font-size: 1.1rem; font-weight: 700; color: #64748b; margin-top: 8px; }
+
+/* Cards Styling */
+.nakath-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: 1.5rem; padding: 1.8rem; box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.06); border: 1px solid rgba(255, 255, 255, 1); transition: all 0.3s ease; }
+.nakath-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px -5px rgba(59, 130, 246, 0.15); }
+.tradition-card { display: flex; align-items: flex-start; gap: 1.5rem; background: rgba(255, 255, 255, 0.9); border-radius: 2rem; padding: 2rem; border: 1px solid rgba(255, 255, 255, 1); transition: all 0.3s ease; }
+.tradition-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+.trad-icon { width: 4rem; height: 4rem; border-radius: 100px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 1.6rem; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+
+/* Scroll Animations */
+.reveal-on-scroll { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.reveal-on-scroll.visible { opacity: 1; transform: translateY(0); }
+.animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Floating Actions */
+.whatsapp-btn { position: fixed; bottom: 25px; left: 25px; background-color: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); z-index: 1000; transition: all 0.3s ease; }
+.whatsapp-btn:hover { transform: scale(1.1); background-color: #128C7E; }
+.scroll-top-btn { position: fixed; bottom: 25px; right: 25px; background-color: #dc2626; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 18px; box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3); z-index: 1000; cursor: pointer; border: none; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+.scroll-top-btn.visible { opacity: 1; visibility: visible; }
+.scroll-top-btn:hover { background-color: #b91c1c; transform: translateY(-3px); }
+
+/* 🌟 YouTube Video Container Responsive Styling 🌟 */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 2px solid rgba(255,255,255,0.8);
+    background-color: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem;
+}
