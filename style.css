@@ -84,3 +84,16 @@ body { background: linear-gradient(135deg, #f8fafc, #f3e8ff, #fefce8, #e0e7ff); 
     height: 100%;
     border-radius: 0.8rem;
 }
+
+/* ටෙක්ස්ට් සහ පින්තූර කොපි කිරීම නැවැත්වීම */
+body {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    -webkit-touch-callout: none; /* iOS Safari */
+}
+
+/* පින්තූර අදින එක (Drag) නැවැත්වීම */
+img {
+    pointer-events: none;
+}
