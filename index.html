@@ -315,7 +315,38 @@
 
     <a href="https://wa.me/94717954374" target="_blank" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i></a>
     <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+<script>
+    // 1. Right Click (Context Menu) Disable කිරීම
+    document.addEventListener('contextmenu', event => event.preventDefault());
 
+    // 2. Keyboard Shortcuts Disable කිරීම
+    document.onkeydown = function(e) {
+        // F12 Key එක Disable කිරීම
+        if(e.keyCode == 123) {
+            return false;
+        }
+        // Ctrl+Shift+I (Inspect) Disable කිරීම
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        // Ctrl+Shift+J (Console) Disable කිරීම
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        // Ctrl+U (View Source) Disable කිරීම
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+        // Ctrl+S (Save Page) Disable කිරීම
+        if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+            return false;
+        }
+        // Ctrl+C (Copy) Disable කිරීම (අමතර ආරක්ෂාවට)
+        if(e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
     <script src="script.js"></script>
 </body>
 </html>
